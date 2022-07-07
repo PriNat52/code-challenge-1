@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+
+<ul *ngFor="let i of people">
+  <app-people
+    [id]="i.id"
+    [first]="i.firstName"
+    [last]="i.lastName"
+    (deleteMe)="deletePerson($event)"
+  >
+  </app-people>
+</ul>
+
+<hr />
+<app-person-form> </app-person-form>
