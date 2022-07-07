@@ -1,0 +1,23 @@
+<div>
+  <form [formGroup]="AddForm">
+    <h3>
+      <u><label>Add A New Person:</label></u>
+    </h3>
+    <div>
+      <label>Id: </label>
+      <input type="text" formControlName="id" />
+    </div>
+    <br />
+    <div>
+      <label>First Name: </label>
+      <input type="text" formControlName="firstName" />
+    </div>
+    <br />
+    <div>
+      <label>Last Name: </label>
+      <input type="text" formControlName="lastName" />
+    </div>
+    <br />
+    <button (click)="addPerson()">Add Person</button>
+  </form>
+</div>
